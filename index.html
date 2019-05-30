@@ -1,177 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<head>
-    <title>Shyam Amrtiya</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-</head>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-<body>
-    <div class="wrapper">
-        <div class="container mt">
-            <div class="row">
-                <div class="col-sm-3 card-shadow" style="margin-bottom: 50px;padding-bottom:10px ;height:950px">
-                    <div class="avatar">
-                        <img src="assets/avatar_hat.jpg" class="img img-responsive img-position" style="width:100%" alt="Avatar">
-                        <div class="username p">
-                            <h5 class="mb0">Shyam amrtiya</h5>
-                        </div>
-                    </div>
-                    <div class="container-fluid text-gray">
-                        <p><i class="fa fa-briefcase mr-lg  text-teal"></i>UI Devloper</p>
-                        <p><i class="fa fa-home mr-lg  text-teal"></i>India</p>
-                        <p><i class="fa fa-envelope mr-lg  text-teal"></i>mvmshyam@gmail.com</p>
-                        <p><i class="fa fa-phone mr-lg  text-teal"></i>+91 7999851543</p>
-                    </div>
-                    <hr class="text-gray">
-                    <div class="container text-gray">
-                        <p class="lg-text"><b><i class="fa fa-asterisk mr-lg  text-teal"></i>Skills</b></p>
-                        <p>Angular 2+</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:85%;">85%</div>
-                        </div>
-                        <p>Typescript</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:75%;">75%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:75%;">75%</div>
-                        </div>
-                        <p>Bootstrap</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:75%;">75%</div>
-                        </div>
-                        <p class="lg-text"><b><i class="fa fa-globe mr-lg  text-teal"></i>Languages</b></p>
-                        <p>Hindi</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:100%;">100%</div>
-                        </div>
-                        <p>English</p>
-                        <div class="skill-progress">
-                            <div class="teal" style="width:85%;">85%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-9">
-                    <div class="container card-shadow p-lg" style="padding-left:15px !important;padding-right:15px !important">
-                        <h4 class="text-gray"><i class="fa fa-briefcase mr-lg fa-lg text-teal"></i>Work Experience</h4>
-                        <div class="container p mt-lg">
-                            <h5><b>Frontend Developer at Plexus 365</b></h5>
-                            <h6 class="text-teal"><i class="fa fa-calendar mr-lg  text-teal"></i> Sept/2017 - June/2018</h6>
-                            <p><small>As a Frontend developer at Plexus 365 I have worked on web & mobile devlopment for
-                                    product and have a rich domain knowledge with a comprehensive understanding of Angular
-                                    2,Ionic 2,nodejs,HTML,CSS,Javascript,TypeScript,Bootstrap.</small></p>
-                            <hr class="text-gray">
-                        </div>
-                        <div class="container p mt-lg">
-                            <h5><b>WebPlexus</b></h5>
-                            <h6 class="text-teal"><i class="fa fa-calendar mr-lg  text-teal"></i> Sept/2017 - June/2018</h6>
-                            <p><small>UI Developer · Plexus is a Trade Ecosystem that optimises business trade: Buying and
-                                    selling services Operation efficiencies and costs Financing rates for it and its entire
-                                    supply chain. Plexus enables buyers and sellers to trade effectively via a private and
-                                    secure B2B trade ecosystem. Trades are linked to real-world business and user identities,
-                                    meeting all regulatory requirements around anti-money laundering and know your customer.
-                                    A Plexus Digital Trade facilitates the negotiating, financing and settlement of a trade.
-                                    It removes the need for multiple documents, disjointed systems and intermediaries. Add
-                                    teammate
-                                </small></p>
-                            <hr class="text-gray">
-                        </div>
-                        <div class="container p mt-lg clearfix">
-                            <h5><b>Screens</b></h5>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/login.jpg">
-                                            <img src="assets/login.jpg" alt="Cinque Terre" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/chatTrade.jpg">
-                                            <img src="assets/chatTrade.jpg" alt="Forest" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/notification.jpg">
-                                            <img src="assets/notification.jpg" alt="Northern Lights" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/transaction.jpg">
-                                            <img src="assets/transaction.jpg" alt="Mountains" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/Trade.jpg">
-                                            <img src="assets/Trade.jpg" alt="Mountains" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="gallery">
-                                        <a target="_blank" href="assets/Tradepage.png">
-                                            <img src="assets/Tradepage.png" alt="Mountains" width="300" height="200">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="container p mt-lg">
-                            <h5><b>Video</b></h5>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F4A5VVev5bY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="container card-shadow p-lg mt-lg" style="padding-left:15px !important;padding-right:15px !important">
-                        <h4 class="text-gray"><i class="fa fa-certificate mr-lg fa-lg text-teal"></i>Education</h4>
-                        <div class="container p mt-lg">
-                            <h5><b>LNCT,Bhopal</b></h5>
-                            <h6 class="text-teal"><i class="fa fa-calendar mr-lg  text-teal"></i> Sept/2013 - June/2017</h6>
-                            <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio, sit
-                                    quidem libero officia expedita nulla optio. Praesentium beatae, doloribus distinctio
-                                    optio quae, voluptate velit nulla obcaecati accusantium nostrum et?</small></p>
-                            <hr class="text-gray">
-                        </div>
-                        <div class="container p">
-                            <h5><b>Maharishi vidya Mandir,Shajapur</b></h5>
-                            <h6 class="text-teal"><i class="fa fa-calendar mr-lg  text-teal"></i> Sept/2013 - June/2017</h6>
-                            <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio, sit
-                                    quidem libero officia expedita nulla optio. Praesentium beatae, doloribus distinctio
-                                    optio quae, voluptate velit nulla obcaecati accusantium nostrum et?</small></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</body>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="/bundle.js"></script><script type="text/javascript" src="/2.bundle.js"></script><script type="text/javascript" src="/3.bundle.js"></script><script type="text/javascript" src="/7.bundle.js"></script><script type="text/javascript" src="/8.bundle.js"></script><script type="text/javascript" src="/5.bundle.js"></script><script type="text/javascript" src="/6.bundle.js"></script><script type="text/javascript" src="/4.bundle.js"></script><script type="text/javascript" src="/0.bundle.js"></script></body>
 </html>
